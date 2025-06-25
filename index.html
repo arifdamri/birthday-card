@@ -2,10 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Happy Birthday Lovie</title>
+  <title>Happy Birthday Lovie 🎂</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <audio autoplay loop>
+    <source src="assets/happy-birthday.mp3" type="audio/mpeg">
+  </audio>
+
   <div class="card">
     <div class="cake">
       <div class="layer layer-bottom"></div>
@@ -15,14 +19,22 @@
         <div class="flame"></div>
       </div>
     </div>
+
     <h1>Happy Birthday 🎉</h1>
     <p>To: My Dearest Lovie 💖</p>
     <p class="message">You are the sweetest part of my life. I love you so much! 💞</p>
-    <div class="hearts">
-      <div class="heart"></div>
-      <div class="heart"></div>
-      <div class="heart"></div>
+
+    <div class="figure">🕺</div>
+
+    <div class="balloons">
+      <div class="balloon red"></div>
+      <div class="balloon blue"></div>
+      <div class="balloon green"></div>
     </div>
+
+    <button onclick="showWish()">💌 Tap to Open Your Birthday Wish</button>
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
