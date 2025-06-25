@@ -1,0 +1,109 @@
+body {
+  background: #ffb6c1;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  color: white;
+  padding: 40px 10px;
+}
+
+.card {
+  position: relative;
+  max-width: 500px;
+  margin: auto;
+}
+
+.cake {
+  position: relative;
+  margin: 20px auto;
+  width: 120px;
+  height: 180px;
+}
+
+.layer {
+  width: 100px;
+  height: 40px;
+  margin: 0 auto 10px;
+  border-radius: 10px;
+}
+
+.layer-bottom {
+  background: #ff8c8c;
+}
+.layer-middle {
+  background: #ffa07a;
+}
+.layer-top {
+  background: #fffacd;
+}
+
+.candle {
+  width: 10px;
+  height: 30px;
+  background: #333;
+  margin: 0 auto;
+  position: relative;
+}
+
+.flame {
+  width: 14px;
+  height: 14px;
+  background: gold;
+  border-radius: 50%;
+  position: absolute;
+  top: -12px;
+  left: -2px;
+  animation: flicker 0.5s infinite alternate;
+}
+
+@keyframes flicker {
+  0% { transform: scale(1); opacity: 1; }
+  100% { transform: scale(1.2); opacity: 0.8; }
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+.message {
+  font-style: italic;
+  color: #fff;
+  margin-top: 5px;
+}
+
+.hearts {
+  margin-top: 20px;
+}
+
+.heart {
+  width: 20px;
+  height: 20px;
+  background: #ff69b4;
+  position: relative;
+  display: inline-block;
+  margin: 0 5px;
+  transform: rotate(-45deg);
+}
+
+.heart::before,
+.heart::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: #ff69b4;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.heart::before {
+  top: -10px;
+  left: 0;
+}
+.heart::after {
+  top: 0;
+  left: 10px;
+}
